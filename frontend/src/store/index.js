@@ -44,3 +44,4 @@ export default configureStore;
 // store to the React application.
 
 // window.store.dispatch({ type: "hello" });
+// ![test-redux-store-image]
