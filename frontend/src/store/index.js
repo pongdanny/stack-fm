@@ -3,7 +3,7 @@
 // `combineReducers`, `applyMiddleware`, and `compose` from the `redux` package.
 // Import `thunk` from `redux-thunk`.
 import { createStore, combineReducers, applyMiddleware, compose } from "redux";
-import { thunk } from "redux-thunk";
+import thunk from "redux-thunk";
 
 // Create a `rootReducer` that calls `combineReducers` and pass in an empty object
 // for now.
@@ -42,3 +42,5 @@ export default configureStore;
 // Finally, export the `configureStore` function at the bottom of the file as the
 // default export. This function will be used by `index.js` to attach the Redux
 // store to the React application.
+
+// window.store.dispatch({ type: "hello" });
