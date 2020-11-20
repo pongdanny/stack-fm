@@ -9,24 +9,20 @@ import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
-import { restoreCSRF, fetch } from "./store/csrf";
 
-import configureStore from "./store";
+import configureStore from "../src/store/index";
+import { restoreCSRF, fetch } from "./store/csrf";
 
 // Create a variable to access your store and expose it to the `window`. It should
 // not be exposed in production, be sure this is only set in development.
 const store = configureStore();
 
 if (process.env.NODE_ENV !== "production") {
-  restoreCSRF();
-
   window.csrfFetch = fetch;
   window.store = store;
 }
+restoreCSRF();
 
-if (process.env.NODE_ENV !== "production") {
-  window.store = store;
-}
 // Next, define a `Root` React functional component that returns the `App`
 // component wrapped in Redux's `Provider` and React Router DOM's `BrowserRouter`
 // provider components.
