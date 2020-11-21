@@ -4,6 +4,7 @@
 // // Import `thunk` from `redux-thunk`.
 import { createStore, combineReducers, applyMiddleware, compose } from "redux";
 import thunk from "redux-thunk";
+import sessionReducer from "./session";
 
 // // Create a `rootReducer` that calls `combineReducers` and pass in an empty object
 // // for now.
@@ -46,7 +47,9 @@ import thunk from "redux-thunk";
 // window.store.dispatch({ type: "hello" });
 // ![test-redux-store-image]
 
-const rootReducer = combineReducers({});
+const rootReducer = combineReducers({
+  session: sessionReducer,
+});
 
 let enhancer;
 
