@@ -30,7 +30,7 @@ function LoginForm() {
         ))}
       </ul>
       <label>
-        Username or Email
+        Username/Email
         <input
           type="text"
           value={credential}

@@ -25,7 +25,7 @@ function App() {
           <Route path="/signup">
             <SignupFormPage />
           </Route>
-          <NavBar />
+          <NavBar></NavBar>
         </Switch>
       )}
     </>
