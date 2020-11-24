@@ -58,9 +58,13 @@ function Navigation({ isLoaded }) {
                 <a href="/">FAQ</a>
               </li>
               <li>{isLoaded && sessionLinks}</li>
+              <li>
+                <a href="/">For Creators</a>
+              </li>
             </ul>
           </div>
         </div>
+        <div></div>
         <div class="headerz">
           <h1>
             Welcome to the <span>Trap</span> Cloud ☁️
