@@ -8,7 +8,7 @@ const SearchResultPage = (props) => {
   const [songList, setSongList] = useState();
 
   const fetchData = async () => {
-    return await fetch("https://soundcloud.com")
+    return await fetch("https://api.soundcloud.com")
       .then((response) => response.json())
       .then((data) => {
         setSongList(data);
