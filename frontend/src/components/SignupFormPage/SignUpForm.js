@@ -40,7 +40,7 @@ function SignupFormPage() {
       <div class="body"></div>
       <div class="grad"></div>
       <div class="header">
-        <div>TrapCloud</div>
+        <div soundTrap>TrapCloud</div>
       </div>
 
       <div className="signup">
