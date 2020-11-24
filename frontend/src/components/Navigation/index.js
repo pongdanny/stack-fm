@@ -28,23 +28,23 @@ function Navigation({ isLoaded }) {
     <div class="wrapper">
       <div class="Container">
         <div class="nav">
-          <div class="logo">LOGO</div>
+          <div class="logo"></div>
           <div class="menu">
             <ul class="navMenu">
               <li>
-                <a href="/">Home</a>
+                <a href="/">Explore</a>
               </li>
               <li>
-                <a href="/">Listining</a>
+                <a href="/">Search</a>
               </li>
               <li>
-                <a href="/">Locations</a>
+                <a href="/">About</a>
               </li>
               <li>
                 <a href="/">Contact</a>
               </li>
               <li>
-                <a href="/">Registration</a>
+                <a href="/">FAQ</a>
               </li>
               <li>
                 <NavLink className="home-btn" exact to="/">
@@ -57,8 +57,10 @@ function Navigation({ isLoaded }) {
         </div>
         <div class="headerz">
           <h1>Welcome to the TrapCloud</h1>
-          <p>By Trappers, For Trappers</p>
-          <button type="button">Explore!</button>
+          <p>For Trappers, By Trappers</p>
+          <button class="explore" type="button">
+            Explore!
+          </button>
         </div>
       </div>
     </div>

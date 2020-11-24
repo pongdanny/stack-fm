@@ -40,9 +40,7 @@ function SignupFormPage() {
       <div class="body"></div>
       <div class="grad"></div>
       <div class="header">
-        <div>
-          Trap<span>Cloud</span>
-        </div>
+        <div>TrapCloud</div>
       </div>
 
       <div className="signup">
