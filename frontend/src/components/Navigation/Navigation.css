@@ -156,4 +156,5 @@ span {
   margin: 50px 5px 0;
   border: none;
   cursor: pointer;
+  border-radius: 5px;
 }

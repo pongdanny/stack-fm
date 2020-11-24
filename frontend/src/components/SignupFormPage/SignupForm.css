@@ -54,7 +54,9 @@ body {
   z-index: 1;
   opacity: 0.7;
 }
-
+.signupspan {
+  font-family: "Open Sans", sans-serif;
+}
 .header {
   position: absolute;
   top: calc(50% - 35px);

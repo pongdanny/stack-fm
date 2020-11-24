@@ -33,7 +33,9 @@ function LoginForm() {
       <div class="body"></div>
       <div class="grad"></div>
       <div class="header">
-        <div soundTrap>TrapCloud</div>
+        <div soundTrap>
+          Trap <span class="signupspan">Cloud</span>
+        </div>
       </div>
       <div className="login">
         <label>
