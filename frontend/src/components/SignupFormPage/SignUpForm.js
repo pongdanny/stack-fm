@@ -40,18 +40,27 @@ function SignupFormPage() {
       <div class="body"></div>
       <div class="grad"></div>
       <div class="header">
-        <div soundTrap>
+        <div>
           Trap<span>Cloud</span>
         </div>
       </div>
-      <div className="login">
+
+      <div className="signup">
         <label>
           <input
             type="text"
-            placeholder="username/e-mail"
-            value={credential}
-            name="user"
-            onChange={(e) => setCredential(e.target.value)}
+            placeholder="e-mail"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+        </label>
+        <label>
+          <input
+            type="text"
+            placeholder="username"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
             required
           />
         </label>
@@ -60,13 +69,21 @@ function SignupFormPage() {
             type="password"
             placeholder="password"
             value={password}
-            name="password"
             onChange={(e) => setPassword(e.target.value)}
             required
           />
         </label>
-        <button type="submit">Sign In</button>
-        <input type="button" value="New User? Sign Up!" />
+        <label>
+          <input
+            type="password"
+            placeholder="confirm password"
+            value={confirmPassword}
+            onChange={(e) => setConfirmPassword(e.target.value)}
+            required
+          />
+        </label>
+        <button type="submit">Sign Up</button>
+        <input type="button" value="Back? Sign In!" />
       </div>
     </form>
   );

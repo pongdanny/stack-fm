@@ -25,14 +25,43 @@ function Navigation({ isLoaded }) {
   }
 
   return (
-    <ul>
-      <li>
-        <NavLink className="home-btn" exact to="/">
-          Home
-        </NavLink>
-        {isLoaded && sessionLinks}
-      </li>
-    </ul>
+    <div class="wrapper">
+      <div class="Container">
+        <div class="nav">
+          <div class="logo">LOGO</div>
+          <div class="menu">
+            <ul class="navMenu">
+              <li>
+                <a href="/">Home</a>
+              </li>
+              <li>
+                <a href="/">Listining</a>
+              </li>
+              <li>
+                <a href="/">Locations</a>
+              </li>
+              <li>
+                <a href="/">Contact</a>
+              </li>
+              <li>
+                <a href="/">Registration</a>
+              </li>
+              <li>
+                <NavLink className="home-btn" exact to="/">
+                  Home
+                </NavLink>
+                {isLoaded && sessionLinks}
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="headerz">
+          <h1>Welcome to the TrapCloud</h1>
+          <p>By Trappers, For Trappers</p>
+          <button type="button">Explore!</button>
+        </div>
+      </div>
+    </div>
   );
 }
 
