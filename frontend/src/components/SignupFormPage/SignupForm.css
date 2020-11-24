@@ -133,12 +133,14 @@ body {
 }
 
 .signup input[type="button"]:hover,
-.signup button:hover {
+.signup button:hover,
+.backsign:hover {
   opacity: 0.8;
 }
 
 .signup input[type="button"]:active,
-.signup button:active {
+.signup button:active,
+.backsign:active {
   opacity: 0.6;
 }
 
@@ -153,7 +155,8 @@ body {
 }
 
 .signup input[type="button"]:focus,
-.signup button:focus {
+.signup button:focus,
+.backsign:focus {
   outline: none;
 }
 
@@ -163,4 +166,17 @@ body {
 
 ::-moz-input-placeholder {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.backsign {
+  background: #fff;
+  border: 1px solid #fff;
+  cursor: pointer;
+  border-radius: 2px;
+  color: #a18d6c;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 6px;
+  text-decoration: none;
 }

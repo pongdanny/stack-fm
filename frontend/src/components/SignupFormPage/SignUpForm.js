@@ -83,7 +83,11 @@ function SignupFormPage() {
           />
         </label>
         <button type="submit">Sign Up</button>
-        <input type="button" value="Back? Sign In!" />
+        <br></br>
+        <br></br>
+        <a class="backsign" href="/login" type="button" value="Back? Sign In!">
+          Back? Sign In!
+        </a>
       </div>
     </form>
   );

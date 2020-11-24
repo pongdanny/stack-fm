@@ -8,10 +8,10 @@ function Track({ start }) {
 
   if (!sessionUser) return <Redirect to="/login" />;
   return (
-    <div className="file-container">
+    <div className="">
       <img src={start.photo} alt={start.songName} />
-      <h2>{start.songName}</h2>
-      <h3>{start.artistName}</h3>
+      <div>{start.songName}</div>
+      <div>{start.artistName}</div>
     </div>
   );
 }
