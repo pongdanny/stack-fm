@@ -30,7 +30,7 @@ const SearchResultPage = (props) => {
 
   return (
     <>
-      <h1>Country List</h1>
+      <h1>Song List</h1>
       <SearchBar input={input} onChange={updateInput} />
       <SongList songList={songList} />
     </>
