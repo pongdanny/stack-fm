@@ -28,14 +28,24 @@ function Navigation({ isLoaded }) {
     <div class="wrapper">
       <div class="Container">
         <div class="nav">
-          <div class="logo"></div>
+          {/* <div class="logo"></div> */}
+          <NavLink className="logo" exact to="/"></NavLink>
           <div class="menu">
             <ul class="navMenu">
               <li>
-                <a href="/">Explore</a>
+                <input
+                  class="searchBar"
+                  type="text"
+                  placeholder="TrapCloud Search"
+                ></input>
+                <img
+                  class="searchPic"
+                  alt="pic"
+                  src="https://img.icons8.com/ios/50/000000/search-database.png"
+                />
               </li>
               <li>
-                <a href="/">Search</a>
+                <a href="/">Explore</a>
               </li>
               <li>
                 <a href="/">About</a>
@@ -46,18 +56,15 @@ function Navigation({ isLoaded }) {
               <li>
                 <a href="/">FAQ</a>
               </li>
-              <li>
-                <NavLink className="home-btn" exact to="/">
-                  Home
-                </NavLink>
-                {isLoaded && sessionLinks}
-              </li>
+              <li>{isLoaded && sessionLinks}</li>
             </ul>
           </div>
         </div>
         <div class="headerz">
-          <h1>Welcome to the TrapCloud</h1>
-          <p>For Trappers, By Trappers</p>
+          <h1>
+            Welcome to the <span>Trap</span> Cloud ☁️
+          </h1>
+          <p>For Rappers, By Trappers 🏚️</p>
           <button class="explore" type="button">
             Explore!
           </button>
