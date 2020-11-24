@@ -30,6 +30,7 @@ function Navigation({ isLoaded }) {
         <div class="nav">
           {/* <div class="logo"></div> */}
           <NavLink className="logo" exact to="/"></NavLink>
+          <div class="logoo"></div>
           <div class="menu">
             <ul class="navMenu">
               <li>
@@ -64,9 +65,9 @@ function Navigation({ isLoaded }) {
           <h1>
             Welcome to the <span>Trap</span> Cloud ☁️
           </h1>
-          <p>For Rappers, By Trappers 🏚️</p>
+          <p>What's Next in Music is First in TrapCloud 🏚️</p>
           <button class="explore" type="button">
-            Explore!
+            Search
           </button>
         </div>
       </div>

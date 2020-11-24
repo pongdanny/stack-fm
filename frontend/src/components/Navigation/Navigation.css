@@ -72,17 +72,23 @@ span {
   align-items: center;
   padding: 0 50px;
 }
+/* .logo {
+  position: absolute;
+  background: url("../Navigation/cloud.jpg");
+  width: auto;
+  height: auto;
+} */
 .logo {
-  background-image: url("../Navigation/soundtrap.png");
+  background: url("../Navigation/cloud.jpg");
   background-size: 100% 100%;
   font-family: "Open Sans", sans-serif;
   height: 70px;
-  width: 70px;
-  border-radius: 35px;
+  width: 100px;
   font-weight: 600;
   letter-spacing: 0.7rem;
-  color: black;
   margin: 0;
+  border-radius: 10px;
+  position: relative;
 }
 
 .logo:hover {
@@ -157,4 +163,8 @@ span {
   border: none;
   cursor: pointer;
   border-radius: 5px;
+}
+
+.explore:hover {
+  background-color: #177245;
 }
