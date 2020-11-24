@@ -128,12 +128,14 @@ body {
 }
 
 .login input[type="button"]:hover,
-.login button:hover {
+.login button:hover,
+.newsign:hover {
   opacity: 0.8;
 }
 
 .login input[type="button"]:active,
-.login button:active {
+.login button:active,
+.newsign:active {
   opacity: 0.6;
 }
 
@@ -148,7 +150,8 @@ body {
 }
 
 .login input[type="button"]:focus,
-.login button:focus {
+.login button:focus,
+.newsign:focus {
   outline: none;
 }
 
@@ -158,4 +161,17 @@ body {
 
 ::-moz-input-placeholder {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.newsign {
+  background: #fff;
+  border: 1px solid #fff;
+  cursor: pointer;
+  border-radius: 2px;
+  color: #a18d6c;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 6px;
+  text-decoration: none;
 }

@@ -59,7 +59,16 @@ function LoginForm() {
           />
         </label>
         <button type="submit">Sign In</button>
-        <input to="/signup" type="button" value="New User? Sign Up!" />
+        <br></br>
+        <br></br>
+        <a
+          class="newsign"
+          href="/signup"
+          type="button"
+          value="New User? Sign Up!"
+        >
+          New? Sign Up!
+        </a>
       </div>
     </form>
   );

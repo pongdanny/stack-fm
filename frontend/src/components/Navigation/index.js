@@ -58,9 +58,6 @@ function Navigation({ isLoaded }) {
                 <a href="/">FAQ</a>
               </li>
               <li>{isLoaded && sessionLinks}</li>
-              <li>
-                <a href="/">For Creators</a>
-              </li>
             </ul>
           </div>
         </div>

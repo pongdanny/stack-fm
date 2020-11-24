@@ -109,7 +109,8 @@ span {
 .menu ul li {
   display: inline-block;
 }
-.menu ul li a {
+.menu ul li a,
+.menu ul li a button {
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
   font-size: 1.3rem;
@@ -122,7 +123,8 @@ span {
   margin: 0 5px;
   transition: 0.5s ease;
 }
-.menu ul li a:hover {
+.menu ul li a:hover,
+.menu ul li a button:hover {
   border-color: springgreen;
 }
 .menu ul li:nth-child(6) a {
