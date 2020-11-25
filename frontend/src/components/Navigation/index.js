@@ -57,7 +57,7 @@ function Navigation({ isLoaded }) {
               <li>
                 <a href="/">FAQ</a>
               </li>
-              <li>{isLoaded && sessionLinks}</li>
+              <li class="buttonz">{isLoaded && sessionLinks}</li>
             </ul>
           </div>
         </div>
