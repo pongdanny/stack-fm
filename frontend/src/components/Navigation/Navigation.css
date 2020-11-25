@@ -29,19 +29,21 @@
 
 @import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap);
 
+@import url(https://fonts.googleapis.com/css2?family=Nerko+One&display=swap);
+
 * {
   margin: 0;
   /* padding: 0; */
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
-  font-size: 10px;
+  font-family: "Nerko One", cursive;
+  font-size: 14px;
   scroll-behavior: smooth;
 }
 
 span {
   font-size: 40px;
   color: springgreen;
-  font-family: "Raleway", sans-serif;
+  font-family: "Nerko One", cursive;
 }
 .wrapper {
   width: auto;
@@ -72,6 +74,10 @@ span {
   align-items: center;
   padding: 0 50px;
 }
+
+.navmenu {
+  padding: 10px;
+}
 /* .logo {
   position: absolute;
   background: url("../Navigation/cloud.jpg");
@@ -81,7 +87,7 @@ span {
 .logo {
   background: url("../Navigation/cloud.jpg");
   background-size: 100% 100%;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Nerko One", cursive;
   height: 70px;
   width: 100px;
   font-weight: 600;
@@ -112,8 +118,8 @@ span {
 .menu ul li a,
 .menu ul li a button {
   text-decoration: none;
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.3rem;
+  font-family: "Nerko One", cursive;
+  font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: 0.1rem;
   color: white;
@@ -139,7 +145,7 @@ span {
   text-align: center;
 }
 .headerz h1 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Nerko One", cursive;
   font-size: 4rem;
   font-weight: 600;
   letter-spacing: 0.2rem;
@@ -147,7 +153,7 @@ span {
   padding: 20% 20px 8px;
 }
 .headerz p {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Nerko One", cursive;
   font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: 0.2rem;
@@ -174,4 +180,52 @@ span {
 .buttonz {
   height: 50px;
   width: 200px;
+}
+
+.bodynav {
+  position: absolute;
+  margin-top: -450px;
+  margin-left: 500px;
+}
+
+.welcome {
+  font-family: "Nerko One", cursive;
+  font-size: 40px;
+}
+
+.whatsnext {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Nerko One", cursive;
+}
+
+.menubutton {
+  position: absolute;
+  margin-top: 35px;
+  height: 20px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  width: 40px;
+  background-color: springgreen;
+}
+
+.menubutton:hover {
+  border: 1px solid springgreen;
+  background-color: #177245;
+}
+
+.menubutton:active {
+  border: 1px solid springgreen;
+}
+
+.menucontent {
+  position: absolute;
+  margin-top: 5px;
+  font-size: 10px;
+}
+
+.profilebtn:hover,
+.logoutbtn:hover {
+  border: 1px solid springgreen;
 }
