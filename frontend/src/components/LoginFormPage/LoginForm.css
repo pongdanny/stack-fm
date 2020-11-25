@@ -6,9 +6,9 @@ label {
   display: grid;
 }
 
-.soundTrap {
+/* .soundTrap {
   background-image: url("../Navigation/soundtrap.png");
-}
+} */
 
 @import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap);
 
