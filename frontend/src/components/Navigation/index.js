@@ -33,7 +33,7 @@ function Navigation({ isLoaded }) {
           <div className="logoo"></div>
           <div className="menu">
             <ul className="navMenu">
-              <li>
+              <li className="searchBarli">
                 <input
                   className="searchBar"
                   type="text"

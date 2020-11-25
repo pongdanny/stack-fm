@@ -40,9 +40,9 @@ function ProfileButton({ user }) {
           <ul className="menucontent">
             <li>
               {" "}
-              &nbsp; &nbsp; &nbsp; &nbsp;{" "}
+              &nbsp; &nbsp; &nbsp;{" "}
               <button className="profilebtn">Profile</button> &nbsp; &nbsp;
-              &nbsp; &nbsp;
+              &nbsp;
             </li>
             {/* <li>{user.email}</li> */}
             <li>

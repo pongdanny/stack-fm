@@ -7,7 +7,7 @@
 .home-btn {
 }
 .searchBar {
-  margin-right: 5px;
+  margin-left: 100px;
   padding: 4px;
   font-size: 17px;
   width: 250px;
@@ -15,6 +15,10 @@
 }
 .searchBar:hover {
   border: 2px solid springgreen;
+}
+
+.searchBarli {
+  margin-left: -100px;
 }
 
 .searchPic {
@@ -44,6 +48,7 @@ span {
   font-size: 40px;
   color: springgreen;
   font-family: "Nerko One", cursive;
+  font-weight: bold;
 }
 .wrapper {
   width: auto;
@@ -70,13 +75,14 @@ span {
   height: 80px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.521);
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-evenly; */
   align-items: center;
   padding: 0 50px;
 }
 
 .navmenu {
   padding: 10px;
+  /* justify-content: space-evenly; */
 }
 /* .logo {
   position: absolute;
@@ -194,13 +200,12 @@ span {
 
 .whatsnext {
   font-size: 40px;
-  font-weight: bold;
   font-family: "Nerko One", cursive;
 }
 
 .menubutton {
   position: absolute;
-  margin-top: 35px;
+  margin-top: -16px;
   height: 20px;
   border-radius: 5px;
   border: none;
@@ -220,11 +225,16 @@ span {
 
 .menucontent {
   position: absolute;
-  margin-top: 5px;
+  margin-top: -45px;
   font-size: 10px;
 }
 
 .profilebtn:hover,
 .logoutbtn:hover {
   border: 1px solid springgreen;
+}
+
+.profilebtn,
+.logoutbtn {
+  margin-left: 50px;
 }
