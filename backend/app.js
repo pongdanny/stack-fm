@@ -10,8 +10,8 @@ const routes = require("./routes");
 const { environment } = require("./config");
 const isProduction = environment === "production";
 
-const indexRouter = require("./routes/index");
-const songsRouter = require("./routes/songs");
+const indexRouter = require("./routes/api/index");
+const songsRouter = require("./routes/api/songs");
 
 const app = express();
 
