@@ -37,7 +37,7 @@ function Navigation({ isLoaded }) {
                 <input
                   className="searchBar"
                   type="text"
-                  placeholder="TrapCloud Search"
+                  placeholder="Search"
                 ></input>
                 <img
                   className="searchPic"
