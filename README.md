@@ -1,7 +1,7 @@
-# trapcloud
+# stack-fm
 
 
-Made with React, Trapcloud is an app for hip hop fans!
+Made with React, stack-fm is an app for hip hop fans!
 
 Other technologies used are Redux, Express and Postgres
 
