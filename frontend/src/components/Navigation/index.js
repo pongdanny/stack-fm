@@ -14,12 +14,14 @@ function Navigation({ isLoaded }) {
   } else {
     sessionLinks = (
       <>
-        <NavLink className="login-btn" to="/login">
-          Log In
-        </NavLink>
-        <NavLink className="signup-btn" to="/signup">
-          Sign Up
-        </NavLink>
+        <div className="navstyle">
+          <NavLink className="login-btn" to="/login">
+            Log In
+          </NavLink>
+          <NavLink className="signup-btn" to="/signup">
+            Sign Up
+          </NavLink>
+        </div>
       </>
     );
   }
