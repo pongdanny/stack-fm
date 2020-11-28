@@ -41,8 +41,10 @@ function ProfileButton({ user }) {
             <li>
               {" "}
               &nbsp; &nbsp; &nbsp;{" "}
-              <button className="profilebtn">Profile</button> &nbsp; &nbsp;
-              &nbsp;
+              <a href="/profile" className="profilebtn">
+                Profile
+              </a>
+              &nbsp; &nbsp; &nbsp;
             </li>
             {/* <li>{user.email}</li> */}
             <li>
