@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { Redirect } from "react-router-dom";
 import "./Track.css";
@@ -8,7 +8,7 @@ function Track({ start }) {
 
   if (!sessionUser) return <Redirect to="/login" />;
   return (
-    <div className="">
+    <div className="track-div">
       <img src={start.photo} alt={start.songName} />
       <div>{start.songName}</div>
       <div>{start.artistName}</div>
