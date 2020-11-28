@@ -11,7 +11,7 @@ function LoginForm() {
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState([]);
 
-  if (sessionUser) return <Redirect to="/" />;
+  if (sessionUser) return <Redirect to="/songs" />;
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -20,6 +20,15 @@ function LoginForm() {
       (res) => {
         if (res.data && res.data.errors) setErrors(res.data.errors);
       }
+    );
+  };
+
+  const demoLoginHandler = (e) => {
+    dispatch(
+      sessionActions.login({
+        credential: "Demo-lition",
+        password: "password",
+      })
     );
   };
 
@@ -61,14 +70,14 @@ function LoginForm() {
         <button type="submit">Sign In</button>
         <br></br>
         <br></br>
-        <a
+        <input
           class="newsign"
-          href="/signup"
+          onClick={demoLoginHandler}
           type="button"
-          value="New User? Sign Up!"
-        >
-          New? Sign Up!
-        </a>
+          value="Demo User"
+          Demo
+          User
+        />
       </div>
     </form>
   );
