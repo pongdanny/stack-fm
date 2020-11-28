@@ -15,9 +15,9 @@ export default function Song() {
   if (!sessionUser) return <Redirect to="/login" />;
 
   return (
-    <ul className="song-container">
+    <ul className="mainsongcontain">
       {songs.map((song) => (
-        <div key={song.songName} className="song-wrapper">
+        <div key={song.songName} className="songcontain">
           <div className="">
             <p>Song {song.songName}</p>
             <p>Artist {song.artistName}</p>

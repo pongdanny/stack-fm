@@ -1,8 +1,11 @@
 const express = require("express");
-const asyncHandler = require("express-async-handler");
-const { Song } = require("./../../db/models");
-const fetch = require("node-fetch");
 const router = express.Router();
+
+const asyncHandler = (handler) => (req, res, next) =>
+  handler(req, res, next).catch(next);
+
+const { Song } = require("../../db/models");
+const fetch = require("node-fetch");
 
 router.get(
   "/",
