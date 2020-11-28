@@ -134,7 +134,7 @@ span {
   font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: 0.1rem;
-  color: white;
+  color: springgreen;
   border: 1px solid transparent;
   border-radius: 4px;
   padding: 10px 15px;
@@ -145,14 +145,26 @@ span {
 .menu ul li a button:hover {
   border-color: springgreen;
 }
+
+.logoutbtn {
+  color: violet;
+}
+
+.logoutbtn:hover {
+  color: violet;
+  border: 2px solid violet;
+}
+
 .menu ul li:nth-child(6) a {
   color: springgreen;
   border: 1px solid springgreen;
 }
+
 .menu ul li:nth-child(6) a:hover {
   color: black;
   background-color: springgreen;
 }
+
 .headerz {
   text-align: center;
 }
@@ -215,7 +227,7 @@ span {
   border-radius: 5px;
   border: none;
   outline: none;
-  width: 40px;
+  width: 80px;
   background-color: springgreen;
 }
 
@@ -229,17 +241,20 @@ span {
 }
 
 .menucontent {
-  position: absolute;
+  /* position: absolute; */
   margin-top: -45px;
+  margin-left: 60px;
   font-size: 10px;
 }
 
-.profilebtn:hover,
-.logoutbtn:hover {
+.profilebtn:hover {
   border: 1px solid springgreen;
 }
 
-.profilebtn,
 .logoutbtn {
   margin-left: 50px;
+}
+
+.profilebtn {
+  margin-left: 10px;
 }
