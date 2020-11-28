@@ -80,7 +80,7 @@ function LoginForm() {
         </a>
         <br></br>
         <input
-          class="newsign"
+          class="demo"
           onClick={demoLoginHandler}
           type="button"
           value="Demo User"
