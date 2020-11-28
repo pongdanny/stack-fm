@@ -70,6 +70,15 @@ function LoginForm() {
         <button type="submit">Sign In</button>
         <br></br>
         <br></br>
+        <a
+          class="newsign"
+          href="/signup"
+          type="button"
+          value="New User? Sign Up!"
+        >
+          New? Sign Up!
+        </a>
+        <br></br>
         <input
           class="newsign"
           onClick={demoLoginHandler}
