@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { NavLink, Redirect } from "react-router-dom";
+import { Redirect } from "react-router-dom";
 import { songThunk } from "../store/charts";
 
 export default function Song() {
@@ -9,7 +9,7 @@ export default function Song() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(songThunk());
-  }, []);
+  }, [dispatch]);
 
   const sessionUser = useSelector((state) => state.session.user);
   if (!sessionUser) return <Redirect to="/login" />;
