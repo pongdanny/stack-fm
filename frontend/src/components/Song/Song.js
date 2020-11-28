@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Redirect } from "react-router-dom";
-import { songThunk } from "../store/charts";
+import { songThunk } from "../../store/charts";
 
 export default function Song() {
   const songs = useSelector((state) => state.song);
@@ -15,18 +15,14 @@ export default function Song() {
   if (!sessionUser) return <Redirect to="/login" />;
 
   return (
-    <ul className="">
+    <ul className="song-container">
       {songs.map((song) => (
-        <div key={song.songName} className="">
+        <div key={song.songName} className="song-wrapper">
           <div className="">
-            <div className="">
-              <p>Song: {song.songName}</p>
-              <p>Artist: {song.artistName}</p>
-              <p>Album: {song.albumName}</p>
-            </div>
+            <p>Song {song.songName}</p>
+            <p>Artist {song.artistName}</p>
+            <p>Album {song.albumName}</p>
           </div>
-          <div className=""></div>
-          <p></p>
         </div>
       ))}
     </ul>

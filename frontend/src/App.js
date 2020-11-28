@@ -7,7 +7,7 @@ import * as sessionActions from "./store/session";
 import Navigation from "./components/Navigation";
 import NavBody from "./components/Navigation/NavBody";
 // import { useSelector } from "react-redux";
-import Song from "./components/Song/Song";
+import Song from "./components/song/Song";
 
 function App() {
   const dispatch = useDispatch();
