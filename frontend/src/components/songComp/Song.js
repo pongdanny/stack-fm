@@ -43,7 +43,9 @@ export default function Song() {
     });
   }
 
-  return <div className="songstorender">hi{songsToRender}</div>;
+  return (
+    <div className="songstorender">No songs to show :({songsToRender}</div>
+  );
 }
 
 // export default Track;
