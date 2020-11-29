@@ -8,6 +8,7 @@ import Navigation from "./components/Navigation";
 import NavBody from "./components/Navigation/NavBody";
 // import { useSelector } from "react-redux";
 import Song from "./components/songComp/Song";
+import ProfilePage from "./components/ProfilePage/ProfilePage";
 // watch out, the line of code above this comment constantly gives errors every now and then, its SUPER ANNOYING AND IDK WHY but its working now
 
 function App() {
@@ -31,6 +32,9 @@ function App() {
           </Route>
           <Route path="/songs">
             <Song />
+          </Route>
+          <Route path="/profile">
+            <ProfilePage />
           </Route>
           <NavBody></NavBody>
         </Switch>

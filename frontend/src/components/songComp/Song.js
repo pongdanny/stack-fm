@@ -33,7 +33,7 @@ export default function Song() {
   }
 
   return (
-    <div className="songstorender">No songs to show :({songsToRender}</div>
+    <div className="songstorender">no songs to show :({songsToRender}</div>
   );
 }
 

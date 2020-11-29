@@ -11,6 +11,7 @@ export const getSongs = (songs) => {
 export const songThunk = () => async (dispatch) => {
   const res = await fetch("/api/songs");
   dispatch(getSongs(res.data));
+  console.log(res.data);
   return res;
 };
 
