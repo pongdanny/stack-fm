@@ -16,7 +16,9 @@ const NavBody = () => {
         Explore Top Tracks For <span>You</span> 🎧
       </p>
       <button className="explore" type="button">
-        Let's Go!
+        <a className="letsgo" href="/songs">
+          Let's Go!
+        </a>
       </button>
     </div>
   );

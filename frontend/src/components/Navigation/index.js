@@ -48,16 +48,16 @@ function Navigation({ isLoaded }) {
                 />
               </li>
               <li>
-                <a href="/">Explore</a>
+                <a href="/songs">Explore</a>
               </li>
               <li>
-                <a href="/">About</a>
+                <a href="/about">About</a>
               </li>
               <li>
-                <a href="/">Contact</a>
+                <a href="/contact">Contact</a>
               </li>
               <li>
-                <a href="/">FAQ</a>
+                <a href="/faq">FAQ</a>
               </li>
               <li className="buttonz">{isLoaded && sessionLinks}</li>
             </ul>

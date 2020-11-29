@@ -47,6 +47,7 @@
   font-family: "Nerko One", cursive;
   font-size: 14px;
   scroll-behavior: smooth;
+  text-decoration: none;
 }
 
 span {
@@ -195,6 +196,7 @@ span {
   border: none;
   cursor: pointer;
   border-radius: 5px;
+  text-decoration: none;
 }
 
 .explore:hover {
@@ -257,4 +259,9 @@ span {
 
 .profilebtn {
   margin-left: 10px;
+}
+
+.letsgo {
+  color: black;
+  font-size: 20px;
 }
