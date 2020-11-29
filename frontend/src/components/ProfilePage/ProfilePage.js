@@ -1,14 +1,7 @@
-import "./ProfilePage.css";
 import React from "react";
-import { useDispatch } from "react-redux";
-import * as sessionActions from "../../store/session";
+import "./ProfilePage.css";
 
 const ProfilePage = ({ user }) => {
-  const dispatch = useDispatch();
-  const logout = (e) => {
-    e.preventDefault();
-    dispatch(sessionActions.logout());
-  };
   return (
     <>
       <div className="usertitle">Welcome To Your Profile!</div>

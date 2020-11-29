@@ -6,6 +6,7 @@ import "./Song.css";
 
 export default function Song() {
   const songs = useSelector((state) => state.song);
+  console.log(songs);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(songThunk());
@@ -16,7 +17,7 @@ export default function Song() {
   if (!sessionUser) return <Redirect to="/login" />;
 
   let songsToRender;
-  console.log(songs);
+
   if (songs) {
     songsToRender = songs.map((song) => {
       return (
