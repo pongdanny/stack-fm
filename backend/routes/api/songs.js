@@ -6,7 +6,7 @@ const asyncHandler = (handler) => (req, res, next) =>
 
 const { Song } = require("../../db/models");
 const fetch = require("node-fetch");
-debugger;
+
 router.get(
   "/",
   asyncHandler(async (req, res) => {

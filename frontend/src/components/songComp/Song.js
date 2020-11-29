@@ -6,26 +6,27 @@ import "./Song.css";
 
 export default function Song() {
   const songs = useSelector((state) => state.song);
-
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(songThunk());
   }, [dispatch]);
 
   const sessionUser = useSelector((state) => state.session.user);
+
   if (!sessionUser) return <Redirect to="/login" />;
 
   let songsToRender;
+  console.log(songs);
   if (songs) {
     songsToRender = songs.map((song) => {
       return (
         <div>
           {/* <div key={song.id}>{song.title}</div> */}
-          <div className="">
-            <p>Song {song.songName}</p>
-            <p>Artist {song.artistName}</p>
-            <p>Album {song.albumName}</p>
-          </div>
+          <ul className="">
+            <li>Song {song.songName}</li>
+            <li>Artist {song.artistName}</li>
+            <li>Album {song.albumName}</li>
+          </ul>
         </div>
       );
     });
