@@ -1,7 +1,7 @@
 # stack-fm
 
 
-Made with React, stack-fm is an app for all music fans!
+Made with React, stack-fm is a music directory for hip hop music fans!
 
 Other technologies used are Redux, Express and Postgres
 
