@@ -18,7 +18,7 @@
 }
 
 .searchPic {
-  margin-right: 200px;
+  margin-right: 100px;
   margin-bottom: -18.6px;
 }
 
@@ -149,12 +149,12 @@ span {
 
 .menu ul li:nth-child(6) a {
   color: springgreen;
-  border: 1px solid springgreen;
+  /* border: 1px solid springgreen; */
 }
 
 .menu ul li:nth-child(6) a:hover {
-  color: black;
-  background-color: springgreen;
+  color: springgreen;
+  /* background-color: springgreen; */
 }
 
 .headerz {
@@ -213,6 +213,7 @@ span {
 .menubutton {
   position: absolute;
   margin-top: -16px;
+  margin-left: 17px;
   height: 20px;
   border-radius: 5px;
   border: none;

@@ -124,7 +124,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   padding: 6px;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .login input[type="button"]:hover,
@@ -177,4 +177,5 @@ body {
 }
 
 .demo {
+  position: absolute;
 }
