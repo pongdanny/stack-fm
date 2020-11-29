@@ -11,6 +11,11 @@ router.get(
   "/",
   asyncHandler(async (req, res) => {
     const songs = await Song.findAll();
+    // let result = {};
+    // for (let i = 0; i < songs.length - 1; i++) {
+    //   let song = songs[i];
+    //   result[song.id] = song;
+    // }
     res.json(songs);
   })
 );

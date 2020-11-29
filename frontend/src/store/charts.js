@@ -1,11 +1,29 @@
 import { fetch } from "./csrf";
-const GET_SONGS = "song/getUser";
-
+const GET_SONGS = "song/getSong";
+const ADD_SONGS = "song/addSong";
 export const getSongs = (songs) => {
   return {
     type: GET_SONGS,
     payload: songs,
   };
+};
+
+const addSongs = (song) => {
+  return {
+    type: ADD_SONGS,
+    payload: song,
+  };
+};
+
+export const searchSongs = (searchTerm) => async (dispatch) => {
+  const response = await fetch(`/api/songs/${searchTerm}`);
+  const songs = response.data;
+  let songObj = {};
+  for (let i = 1; i < songs.length; i++) {
+    let song = songs[i];
+    songObj[song.Song.id] = song.Song;
+  }
+  dispatch(addSongs(songObj));
 };
 
 export const songThunk = () => async (dispatch) => {

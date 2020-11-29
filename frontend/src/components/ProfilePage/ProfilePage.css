@@ -1,4 +1,17 @@
 .usertitle {
   position: absolute;
-  margin-top: -250px;
+  margin-top: -550px;
+  font-size: 50px;
+  margin-left: 500px;
+}
+
+.userdata {
+  position: absolute;
+  margin-top: -450px;
+  font-size: 30px;
+  margin-left: 500px;
+}
+
+.userdata div {
+  font-size: 30px;
 }

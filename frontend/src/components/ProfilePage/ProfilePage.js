@@ -1,16 +1,15 @@
 import React from "react";
 import "./ProfilePage.css";
+// import { getSong } from "../../store/charts";
 
-const ProfilePage = ({ user }) => {
-  return (
-    <>
-      <div className="usertitle">Welcome To Your Profile!</div>
-      <div className="userdata">
-        <div>{user.username}</div>
-        <div>{user.email}</div>
-      </div>
-    </>
-  );
-};
+const ProfilePage = (props) => (
+  <figure>
+    <div className="usertitle">User Details:</div>
+    <div className="userdata">
+      <div>User ID - {props.username} </div>
+      <div>User E-Mail - {props.email}</div>
+    </div>
+  </figure>
+);
 
 export default ProfilePage;
