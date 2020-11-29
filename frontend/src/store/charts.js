@@ -1,17 +1,17 @@
 import { fetch } from "./csrf";
 const GET_SONGS = "song/getUser";
 
-export const getSongs = (songList) => {
+export const getSongs = (songs) => {
   return {
     type: GET_SONGS,
-    payload: songList,
+    payload: songs,
   };
 };
 
 export const songThunk = () => async (dispatch) => {
-  const response = await fetch("/api/songs");
-  dispatch(getSongs(response.data.songList));
-  return response;
+  const res = await fetch("/api/songs");
+  dispatch(getSongs(res.data));
+  return res;
 };
 
 const songReducer = (state = [], action) => {
