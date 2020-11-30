@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import * as songActions from "../../store/charts";
 import { useHistory } from "react-router-dom";
-// import './Search.css';
+import "./Search.css";
 
 const SearchBar = () => {
   const [search, setSearch] = useState("");
@@ -22,15 +22,15 @@ const SearchBar = () => {
 
   return (
     <>
-      <button onClick={handleSearch} className={"searchbutton"}>
-        <i className="search-icon"></i>
-      </button>
       <input
         onChange={handleChange}
         value={search}
-        className={"searchinput"}
+        className="searchinput"
         placeholder="Search For Songs"
       />
+      <button onClick={handleSearch} className="searchbutton">
+        <i className="search-icon"></i>
+      </button>
     </>
   );
 };

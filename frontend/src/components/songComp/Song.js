@@ -13,6 +13,7 @@ import "./Song.css";
 export default function Song() {
   const songs = useSelector((state) => state.song);
   console.log(songs);
+
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(songThunk());
@@ -26,8 +27,7 @@ export default function Song() {
     songsToRender = songs.map((song) => {
       return (
         <div>
-          {/* <div key={song.id}>{song.title}</div> */}
-          <ul className="">
+          <ul className="songlist">
             <li>Song {song.songName}</li>
             <li>Artist {song.artistName}</li>
             <li>Album {song.albumName}</li>
@@ -37,7 +37,7 @@ export default function Song() {
     });
   }
 
-  //   return (
-  //     <div className="songstorender">no songs to show :({songsToRender}</div>
-  //   );
+  return (
+    <div className="songstorender">no songs to show :({songsToRender}</div>
+  );
 }

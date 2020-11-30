@@ -35,7 +35,8 @@ function Navigation({ isLoaded }) {
           <div className="logoo"></div>
           <div className="menu">
             <ul className="navMenu">
-              <li className="searchBarli">
+              <Search type="input"></Search>
+              {/* <li className="searchBarli">
                 <input
                   className="searchBar"
                   type="text"
@@ -46,7 +47,7 @@ function Navigation({ isLoaded }) {
                   alt="pic"
                   src="https://img.icons8.com/ios/50/000000/search-database.png"
                 />
-              </li>
+              </li> */}
               <li>
                 <a href="/songs">Explore</a>
               </li>
