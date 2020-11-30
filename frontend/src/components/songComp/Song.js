@@ -17,28 +17,28 @@ export default function Song() {
   const sessionUser = useSelector((state) => state.session.user);
   if (!sessionUser) return <Redirect to="/login" />;
 
-  // let songsToRender;
-  // if (songs) {
-  //   songsToRender = songs.map((song) => {
-  return (
-    <div>
-      <div>
-        <ul className="songlist">
-          {songs.map((songfull) => (
-            <div>
-              <li>Song {songfull.songName}</li>
-              <li>Artist {songfull.artistName}</li>
-              <li>Album {songfull.albumName}</li>
-            </div>
-          ))}
-        </ul>
-      </div>
-    </div>
-  );
-  //   });
-  // }
+  let songsToRender;
+  if (songs) {
+    songsToRender = songs.map((song) => {
+      return (
+        <div>
+          <div>
+            <ul className="songlist">
+              {/* {songs.map((song) => ( */}
+              <div>
+                <li>Song {song.songName}</li>
+                <li>Artist {song.artistName}</li>
+                <li>Album {song.albumName}</li>
+              </div>
+              {/* ))} */}
+            </ul>
+          </div>
+        </div>
+      );
+    });
+  }
 
-  // return (
-  //   <div className="songstorender">no songs to show :({songsToRender}</div>
-  // );
+  return (
+    <div className="songstorender">no songs to show :({songsToRender}</div>
+  );
 }

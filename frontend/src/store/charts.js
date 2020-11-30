@@ -1,9 +1,10 @@
 import { fetch } from "./csrf";
-const { createStore } = require("redux");
+// const { createStore } = require("redux");
 const GET_SONGS = "song/getSong";
 // const ADD_SONGS = "song/addSong";
 // const UPDATE_SONGS = "song/updateSong";
 const DELETE_SONGS = "song/deleteSong";
+
 export const getSongs = (song) => {
   return {
     type: GET_SONGS,
@@ -47,7 +48,7 @@ export const fetchSongs = () => async (dispatch) => {
   const res = await fetch("/api/songs");
   dispatch(getSongs(res.data));
   // console.log(res.data);
-  return res.data;
+  return res;
 };
 
 // const updateSongs = (song) => {
@@ -105,25 +106,25 @@ const songReducer = (state = initialState, action) => {
 //   }
 // };
 
-const store = createStore(songReducer);
+// const store = createStore(songReducer);
 
-const addSong = {
-  type: "ADD_SONGS",
-  song: "Pain",
-};
+// const addSong = {
+//   type: "ADD_SONGS",
+//   song: "Pain",
+// };
 
-console.log(store.getState());
-store.dispatch(addSong);
-console.log(store.getState());
+// console.log(store.getState());
+// store.dispatch(addSong);
+// console.log(store.getState());
 
-const display = () => {
-  console.log(store.getState());
-};
-const unsubscribeDisplay = store.subscribe(display);
+// const display = () => {
+//   console.log(store.getState());
+// };
+// const unsubscribeDisplay = store.subscribe(display);
 
-store.dispatch(addSong);
+// store.dispatch(addSong);
 
-unsubscribeDisplay();
+// unsubscribeDisplay();
 
-store.dispatch(addSong);
+// store.dispatch(addSong);
 export default songReducer;
