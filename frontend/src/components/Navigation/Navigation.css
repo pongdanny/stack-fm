@@ -129,7 +129,7 @@ span {
   color: springgreen;
   border: 1px solid transparent;
   border-radius: 4px;
-  padding: 10px 15px;
+  padding: 10px 30px;
   margin: 0 5px;
   transition: 0.5s ease;
 }
@@ -149,6 +149,7 @@ span {
 
 .menu ul li:nth-child(6) a {
   color: springgreen;
+
   /* border: 1px solid springgreen; */
 }
 
@@ -243,13 +244,13 @@ span {
 }
 
 .logoutbtn {
-  margin-left: 50px;
+  margin-left: 40px;
   font-size: 20px;
   border-radius: 5px;
 }
 
 .profilebtn {
-  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .letsgo {

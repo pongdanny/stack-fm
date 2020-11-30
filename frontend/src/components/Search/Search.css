@@ -1,0 +1,29 @@
+.searchinput {
+  width: 200px;
+  position: absolute;
+  margin-top: 28px;
+  margin-left: 1000px;
+  height: 23.5px;
+  border-radius: 5px;
+}
+
+.searchinput:hover {
+  border: 1px solid springgreen;
+}
+
+.searchbutton {
+  position: absolute;
+  margin-top: 27px;
+  margin-left: 1200px;
+  height: 25px;
+  width: 25px;
+  background-image: url("https://img.icons8.com/ios/50/000000/search-database.png");
+  background-size: 100% 100%;
+
+  border: none;
+  border-radius: 5px;
+}
+
+.searchbutton:hover {
+  background-color: springgreen;
+}
