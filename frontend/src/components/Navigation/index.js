@@ -49,7 +49,7 @@ function Navigation({ isLoaded }) {
                 />
               </li> */}
               <li>
-                <a href="/songs">Explore</a>
+                <a href="/login">Explore</a>
               </li>
               <li>
                 <a href="/about">About</a>
