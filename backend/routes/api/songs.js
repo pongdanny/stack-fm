@@ -25,7 +25,7 @@ router.get(
   "/",
   asyncHandler(async (req, res) => {
     const songs = await Song.findAll();
-    res.json({ songs: songs });
+    res.json({ songs });
   })
 );
 

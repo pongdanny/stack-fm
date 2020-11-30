@@ -5,6 +5,7 @@
 import { createStore, combineReducers, applyMiddleware, compose } from "redux";
 import thunk from "redux-thunk";
 import sessionReducer from "./session";
+import songsReducer from "./charts";
 
 // // Create a `rootReducer` that calls `combineReducers` and pass in an empty object
 // // for now.
@@ -49,6 +50,7 @@ import sessionReducer from "./session";
 
 const rootReducer = combineReducers({
   session: sessionReducer,
+  songList: songsReducer,
 });
 
 let enhancer;

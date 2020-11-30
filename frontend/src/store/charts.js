@@ -3,12 +3,12 @@ import { fetch } from "./csrf";
 const GET_SONGS = "song/getSong";
 // const ADD_SONGS = "song/addSong";
 // const UPDATE_SONGS = "song/updateSong";
-const DELETE_SONGS = "song/deleteSong";
+// const DELETE_SONGS = "song/deleteSong";
 
-export const getSongs = (song) => {
+export const getSongs = (songs) => {
   return {
     type: GET_SONGS,
-    payload: song,
+    songs,
   };
 };
 
@@ -46,7 +46,7 @@ export const getSongs = (song) => {
 
 export const fetchSongs = () => async (dispatch) => {
   const res = await fetch("/api/songs");
-  dispatch(getSongs(res.data));
+  dispatch(getSongs(res.data.songs));
   // console.log(res.data);
   return res;
 };
@@ -88,10 +88,7 @@ const initialState = [
 const songReducer = (state = initialState, action) => {
   switch (action.type) {
     case GET_SONGS:
-      return action.payload;
-    case DELETE_SONGS:
-      state = null;
-      return state;
+      return action.songs;
     default:
       return state;
   }
