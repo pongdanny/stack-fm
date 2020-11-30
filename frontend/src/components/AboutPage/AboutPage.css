@@ -4,4 +4,12 @@
   font-size: 30px;
   width: 700px;
   margin-left: 350px;
+  background-color: springgreen;
+  border: 7px solid springgreen;
+  color: black;
+  border-radius: 10px;
+}
+
+.aboutstory:hover {
+  background-color: #177245;
 }
