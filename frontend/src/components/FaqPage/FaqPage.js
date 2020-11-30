@@ -3,8 +3,8 @@ import "./FaqPage.css";
 
 const FaqPage = (props) => {
   return (
-    <div class="content">
-      <div class="center">
+    <div className="content">
+      <div className="center">
         <details>
           <summary>
             <h2>What's Stack FM?</h2>
