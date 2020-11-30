@@ -7,13 +7,46 @@ const ProfilePage = (props) => {
   const sessionUser = useSelector((state) => state.session.user);
   return (
     <>
-      <figure>
-        <div className="usertitle">User Details:</div>
-        <div className="userdata">
-          <div>User ID - {sessionUser.username} </div>
-          <div>User E-Mail - {sessionUser.email}</div>
+      <div className="page">
+        <div className="profile">
+          <div className="profile-background"></div>
+          <div className="profile-contents">
+            <div className="profile-header">
+              <svg
+                className="profile-header__icon"
+                width="10rem"
+                height="10rem"
+              >
+                <div className="profile-icon"></div>
+              </svg>
+
+              <h1 className="profile-header__text">
+                <div className="email">e-mail: {sessionUser.email}</div>
+              </h1>
+              <figure>
+                <div className="usertitle"></div>
+                <div className="userdata">
+                  <div>hey {sessionUser.username}! </div>
+                </div>
+              </figure>
+            </div>
+            <div className="profile-info">
+              <div className="profile-info-data">
+                <div className="profile-info-data__number">17</div>
+                <div className="profile-info-data__name">Songs</div>
+              </div>
+              <div className="profile-info-data">
+                <div className="profile-info-data__number">48</div>
+                <div className="profile-info-data__name">Friends</div>
+              </div>
+              <div className="profile-info-data">
+                <div className="profile-info-data__number">22</div>
+                <div className="profile-info-data__name">Saved</div>
+              </div>
+            </div>
+          </div>
         </div>
-      </figure>
+      </div>
     </>
   );
 };
