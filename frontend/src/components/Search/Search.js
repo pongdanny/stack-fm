@@ -4,7 +4,7 @@ import * as songActions from "../../store/charts";
 import { useHistory } from "react-router-dom";
 import "./Search.css";
 
-const SearchBar = () => {
+const Search = () => {
   const [search, setSearch] = useState("");
   const dispatch = useDispatch();
   const history = useHistory();
@@ -35,4 +35,4 @@ const SearchBar = () => {
   );
 };
 
-export default SearchBar;
+export default Search;

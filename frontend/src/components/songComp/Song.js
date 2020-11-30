@@ -12,7 +12,7 @@ export default function Song() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchSongs());
-  }, []);
+  }, [dispatch]);
 
   const sessionUser = useSelector((state) => state.session.user);
   if (!sessionUser) return <Redirect to="/login" />;

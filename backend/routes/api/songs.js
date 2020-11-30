@@ -32,7 +32,6 @@ router.get(
 router.post(
   "/create",
   asyncHandler(async (req, res, next) => {
-    const { songName, artistName, albumName } = req.body;
     const songs = await Song.create(req.body);
     res.json({
       song: songs,
