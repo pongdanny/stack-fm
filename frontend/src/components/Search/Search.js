@@ -22,13 +22,13 @@ const SearchBar = () => {
 
   return (
     <>
-      <button onClick={handleSearch} className={"search__button"}>
-        <i className="fas fa-search"></i>
+      <button onClick={handleSearch} className={"searchbutton"}>
+        <i className="search-icon"></i>
       </button>
       <input
         onChange={handleChange}
         value={search}
-        className={"search__input"}
+        className={"searchinput"}
         placeholder="Search For Songs"
       />
     </>
