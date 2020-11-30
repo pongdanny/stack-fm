@@ -13,10 +13,10 @@ const NavBody = () => {
         <span>STACK</span> FM 📚📻
       </h1>
       <p className="whatsnext">
-        Explore Top Tracks For <span>You</span> 🎧
+        Explore Tracks For <span>You</span> 🎧
       </p>
       <button className="explore" type="button">
-        <a className="letsgo" href="/songs">
+        <a type="button" className="letsgo" href="/login">
           Let's Go!
         </a>
       </button>

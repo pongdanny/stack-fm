@@ -1,21 +1,53 @@
 import { fetch } from "./csrf";
 const { createStore } = require("redux");
 const GET_SONGS = "song/getSong";
-const ADD_SONGS = "song/addSong";
+// const ADD_SONGS = "song/addSong";
 // const UPDATE_SONGS = "song/updateSong";
-// const DELETE_SONGS = "song/deleteSong";
-export const getSongs = (songs) => {
+const DELETE_SONGS = "song/deleteSong";
+export const getSongs = (song) => {
   return {
     type: GET_SONGS,
-    payload: songs,
+    payload: song,
   };
 };
 
-const addSongs = (song) => {
-  return {
-    type: ADD_SONGS,
-    payload: song,
-  };
+// const makeSongs = (song) => {
+//   return {
+//     type: ADD_SONGS,
+//     song,
+//   };
+// };
+
+// export const getSong = (song) => async (dispatch) => {
+//   const { songName, artistName, albumName } = song;
+//   const res = await fetch("/api/songs", {
+//     method: "GET",
+//     body: JSON.stringify({
+//       songName,
+//       artistName,
+//       albumName,
+//     }),
+//   });
+//   dispatch(getSongs(res.data));
+//   return res;
+// };
+
+// const initialState = { song: [] };
+
+// const songReducer = (state = initialState, action) => {
+//   switch (action.type) {
+//     case GET_SONGS:
+//       return { ...state, song: [...state.song, action.song] };
+//     default:
+//       return state;
+//   }
+// };
+
+export const fetchSongs = () => async (dispatch) => {
+  const res = await fetch("/api/songs");
+  dispatch(getSongs(res.data));
+  // console.log(res.data);
+  return res.data;
 };
 
 // const updateSongs = (song) => {
@@ -25,12 +57,13 @@ const addSongs = (song) => {
 //   };
 // };
 
-// const deleteSongs = (song) => {
-//   return {
-//     type: DELETE_SONGS,
-//     payload: song,
-//   };
-// };
+export const deleteSongs = () => async (dispatch) => {
+  const res = await fetch("api/songs/delete", {
+    method: "DELETE",
+  });
+  dispatch(deleteSongs());
+  return res;
+};
 
 export const searchSongs = (searchTerm) => async (dispatch) => {
   const response = await fetch(`/api/songs/${searchTerm}`);
@@ -40,24 +73,37 @@ export const searchSongs = (searchTerm) => async (dispatch) => {
     let song = songs[i];
     songObj[song.Song.id] = song.Song;
   }
-  dispatch(addSongs(songObj));
+  dispatch(fetchSongs(songObj));
 };
 
-export const songThunk = () => async (dispatch) => {
-  const res = await fetch("/api/songs");
-  dispatch(getSongs(res.data));
-  // console.log(res.data);
-  return res.data;
-};
+const initialState = [
+  {
+    songName: " ",
+    artistName: " ",
+    albumName: " ",
+  },
+];
 
-const songReducer = (state = [], action) => {
+const songReducer = (state = initialState, action) => {
   switch (action.type) {
     case GET_SONGS:
-      return [...state, action.song];
+      return action.payload;
+    case DELETE_SONGS:
+      state = null;
+      return state;
     default:
       return state;
   }
 };
+
+// const songReducer = (state = [], action) => {
+//   switch (action.type) {
+//     case GET_SONGS:
+//       return [...state, action.song];
+//     default:
+//       return state;
+//   }
+// };
 
 const store = createStore(songReducer);
 
