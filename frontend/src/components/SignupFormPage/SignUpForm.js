@@ -41,7 +41,7 @@ function SignupFormPage() {
       <div class="grad"></div>
       <div class="header">
         <div soundTrap>
-          Trap <span class="signupspan">Cloud</span>
+          Stack <span class="signupspan">FM</span>
         </div>
       </div>
 
