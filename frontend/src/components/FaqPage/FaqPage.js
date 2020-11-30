@@ -9,7 +9,7 @@ const FaqPage = (props) => {
           <summary>
             <h2>What's Stack FM?</h2>
           </summary>
-          <p>stack-fm is an app inspired by last.fm</p>
+          <p>stack-fm is a music list app inspired by last.fm</p>
         </details>
         <details>
           <summary>
@@ -17,7 +17,7 @@ const FaqPage = (props) => {
           </summary>
           <p>Mainly React, Redux, Express and Sequelize</p>
         </details>
-        <details open>
+        <details>
           <summary>
             <h2>How Long Was Development?</h2>
           </summary>
