@@ -10,6 +10,7 @@ import NavBody from "./components/Navigation/NavBody";
 import Song from "./components/songComp/Song";
 import ProfilePage from "./components/ProfilePage/ProfilePage";
 import ContactPage from "./components/ContactPage/ContactPage";
+import FaqPage from "./components/FaqPage/FaqPage";
 // watch out, the line of code above this comment constantly gives errors every now and then, its SUPER ANNOYING AND IDK WHY but its working now
 
 function App() {
@@ -39,6 +40,9 @@ function App() {
           </Route>
           <Route path="/contact">
             <ContactPage />
+          </Route>
+          <Route path="/faq">
+            <FaqPage />
           </Route>
           <NavBody></NavBody>
         </Switch>
