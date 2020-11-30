@@ -1,0 +1,19 @@
+.contactstory {
+  position: absolute;
+  margin-top: -500px;
+  margin-left: 450px;
+  font-size: 50px;
+}
+
+.contactemail {
+  position: absolute;
+  margin-top: -350px;
+  margin-left: 450px;
+  font-size: 50px;
+}
+
+.gitbtn {
+  padding-top: 00px;
+  height: 40px;
+  font-size: 20px;
+}

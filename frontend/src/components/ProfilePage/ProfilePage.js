@@ -33,15 +33,15 @@ const ProfilePage = (props) => {
             <div className="profile-info">
               <div className="profile-info-data">
                 <div className="profile-info-data__number">17</div>
-                <div className="profile-info-data__name">Songs</div>
+                <div className="profile-info-data__name">songs</div>
               </div>
               <div className="profile-info-data">
                 <div className="profile-info-data__number">48</div>
-                <div className="profile-info-data__name">Friends</div>
+                <div className="profile-info-data__name">friends</div>
               </div>
               <div className="profile-info-data">
                 <div className="profile-info-data__number">22</div>
-                <div className="profile-info-data__name">Saved</div>
+                <div className="profile-info-data__name">saved</div>
               </div>
             </div>
           </div>
