@@ -5,8 +5,7 @@ const AboutPage = (props) => {
   return (
     <div>
       <div className="aboutstory">
-        hey there! my name's danny and i'm currently a student at app academy,
-        learning to become a full stack engineer! I hope to start an exciting new journey in software
+        Hey there! My name's Danny and I'm a fullstack software engineer! I hope to start an exciting new journey in software
         development!
       </div>
     </div>
