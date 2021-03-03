@@ -7,7 +7,7 @@ const FaqPage = (props) => {
       <div className="center">
         <details>
           <summary>
-            <h2>What Is Stack FM?</h2>
+            <h2>What is Stack FM?</h2>
           </summary>
           <p>stack-fm is a music list app inspired by last.fm</p>
         </details>
